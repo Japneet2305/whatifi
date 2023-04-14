@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Song Recommendations</title>
+    <style>
+        body {
+      font-family: Arial, sans-serif;
+      background-color: #cdcfd1;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .header {
+      background-color: #e600ff;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+      margin-top: 50px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    p {
+      margin-top: 10px;
+    }
+
+    .input-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .input-container input {
+      flex-grow: 1;
+      padding: 10px;
+      margin-right: 10px;
+      border: none;
+      border-bottom: 1px solid #007bff;
+    }
+
+    .input-container button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .footer {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+    </style>
+</head>
+<body style="background-image:url(background.jpg); background-size:cover; background-opacity:0.8;">
+    <div style="max-width: 800px; margin: 0 auto;">
+        <h1 style="text-align: center;">Welcome to Song Recommendations!</h1>
+        <nav>
+            <ul style="list-style-type: none; padding: 0; margin: 0;">
+                <li style="display: inline; margin-right: 10px;"><a href="index.php">Home</a></li>
+                <li style="display: inline; margin-right: 10px;">
+                    <div class="dropdown">
+                        <a href="about.php">About Us</a>
+                        <div class="dropdown-content">
+                            <a href="about.php#mission">Mission</a>
+                            <a href="about.php#team">Team</a>
+                            <a href="about.php#contact">Contact Us</a>
+                        </div>
+                    </div>
+                </li>
+                <li style="display: inline;"><a href="contact.php">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div style="text-align: center;">
+            <form action="recommendation.php" method="post">
+                <label for="songName">Song Name: </label>
+                <input type="text" id="songName" name="songName" required>
+                <br><br>
+                <label for="userName">User Name: </label>
+                <input type="text" id="userName" name="userName" required>
+                <br><br>
+                <label for="releaseDate">Release Date: </label>
+                <select id="releaseDate" name="releaseDate" required>
+                    <option value="1day">1 Day</option>
+                    <option value="1week">1 Week</option>
+                    <option value="1month">1 Month</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <!-- Section to display recommended songs -->
+        <div id="recommended-songs" style="text-align: center;">
+            <!-- PHP code to display recommended songs here -->
+            <!-- ... -->
+        </div>
+    </div>
+</body>
+</html>
