@@ -1,0 +1,100 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Result Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #aa1919;
+      margin: 10;
+      padding: 10;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
+    }
+    header {
+        font-family: 'Times New Roman', Times, serif;
+      background-color: #2c3e50;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+    h1 {
+      font-size: 44px;
+      margin: 0;
+    }
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h2 {
+      font-size: 24px;
+      margin-top: 0;
+    }
+    .transparent-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 50px;
+    margin-top: 40px;
+    border-radius: 30px; /* Added border radius for rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Added box shadow for depth */
+    }
+    h3 {
+      font-size: 18px;
+      margin-top: 0;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    footer {
+      position: absolute;
+      background-color: #2c3e50;
+      padding: 20px;
+      width: 100%;
+      left: 0;
+    bottom: 0;
+      text-align: center;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Whatifi</h1>
+    <!-- Other header content here -->
+  </header>
+  
+  <div class="content">
+    <h2>Ready To Make Some Noise?</h2>
+        <div class="transparent-box">
+            
+            <p>Enter A Song Name & Your Spotify Username:</p>
+          <form action="/search" method="post">
+              <input type="text" name="song_name" placeholder="Enter Song Name">
+              <!-- <input type="submit" value="Search"> -->
+              <input type="text" name="Username" placeholder="Enter Song Name">
+              <input type="submit" value="Search">
+          </form>
+  </div>
+
+  <footer>
+    <p>Contact Us: J&J Music Co.</p>
+
+    <!-- <p><a href="https://www.google.com/">Contact Us: </a> J&J Music Co.</p> -->
+    <!-- Other footer content here -->
+  </footer>
+</body>
+</html>
